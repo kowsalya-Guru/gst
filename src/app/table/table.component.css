@@ -16,8 +16,11 @@
 .card {
     margin: 30px;
     border-radius: 20px;
+    background-color: transparent;
+}
+
+.card-table {
     background-color: white;
-    background: linear-gradient(darkblue, white);
 }
 
 .table {

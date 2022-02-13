@@ -30,7 +30,6 @@ export class TableComponent implements OnInit {
 
     this.dtOptions = {
       pagingType: 'full_numbers',
-      // processing: true,
       searching: true
     };
 
@@ -68,7 +67,6 @@ export class TableComponent implements OnInit {
       this.invoiceService.createInvoice(this.invoiceForm.value)
         .then(user_res => {
           this.ngOnInit();
-          // this.refreshTable();
         })
         .catch(err => {
           console.log(err);
