@@ -1,0 +1,54 @@
+.heading {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.invalid-feedback {
+    color: red;
+}
+
+.label-color {
+    color: white;
+}
+
+.card {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: white;
+    background: linear-gradient(darkblue, white);
+}
+
+.table {
+    border: 4px solid black;
+}
+
+.btn-noLabel {
+    margin-top: 23px;
+}
+
+.m-25 {
+    margin: 25px;
+}
+
+.text-align-right {
+    text-align: right;
+    font-weight: bold;
+}
+
+a {
+    margin-left: 20px;
+}
+
+::ng-deep.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-bottom: 10px;
+}
+.total{
+    text-align: right;
+    font-weight: bolder;
+    padding-right: 35%;
+}

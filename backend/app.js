@@ -3,13 +3,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-const userRoutes = require("./routes/user");
+const invoiceRoutes = require("./routes/invoice");
 const cors = require('cors')
 const app = express();
 
 mongoose.connect(
-  "mongodb://localhost:27017/sample",
-  { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
+  "mongodb://localhost:27017/gst",
+  // { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}
+  )
 .then(() => {
   console.log("Connected to database!");
 })
@@ -70,13 +71,11 @@ app.use((req, res, next) => {
   );
 
   next();
-  // if(req.method == 'POST' && req.path == '/api/login') return next();
   
-  // checkAuthToken();
   
 });
 
-// app.use("/api/posts", postsRoutes);
-// app.use("/api/user", userRoutes);
+app.use("/api/invoice", invoiceRoutes);
+
 
 module.exports = app;
